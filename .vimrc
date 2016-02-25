@@ -1,5 +1,43 @@
+call plug#begin()
+Plug 'gmarik/vundle'
+Plug 'The-NERD-tree'
+Plug 'Rip-Rip/clang_complete'
+Plug 'Python-mode-klen'
+Plug 'Syntastic'
+Plug 'a.vim'
+Plug 'bling/vim-airline'
+Plug 'AutoClose'
+Plug 'bufexplorer.zip'
+Plug 'fugitive.vim'
+Plug 'DoxygenToolkit.vim'
+Plug 'xolox/vim-misc'
+Plug 'Mark'
+Plug 'Tagbar'
+Plug 'SuperTab'
+Plug 'blindFS/vim-taskwarrior'
+Plug 'Indent-Guides'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'fish.vim'
+Plug 'Chiel92/vim-autoformat'
+""Plug 'zhaocai/GoldenView.vim'
+""Plug 'bbchung/clighter'
+Plug 'airblade/vim-rooter'
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
+
+""" Styles
+Plug 'vivien/vim-addon-linux-coding-style'
+
+""" Themes
+Plug 'jellybeans.vim'
+Plug 'Zenburn'
+Plug 'badwolf'
+Plug 'itchyny/landscape.vim'
+Plug 'fxn/vim-monochrome'
+
+call plug#end()
+
 set nocompatible
-filetype off
 
 hi Normal ctermbg=NONE
 
@@ -8,48 +46,6 @@ syntax on
 if &shell =~# 'fish$'
     set shell=sh
 endif
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Plugin 'gmarik/vundle'
-Plugin 'The-NERD-tree'
-Plugin 'Rip-Rip/clang_complete'
-Plugin 'Python-mode-klen'
-Plugin 'Syntastic'
-Plugin 'a.vim'
-Plugin 'bling/vim-airline'
-Plugin 'AutoClose'
-Plugin 'bufexplorer.zip'
-Plugin 'fugitive.vim'
-Plugin 'DoxygenToolkit.vim'
-""""Plugin 'xolox/vim-easytags'
-Plugin 'xolox/vim-misc'
-Plugin 'Mark'
-Plugin 'Tagbar'
-Plugin 'SuperTab'
-Plugin 'blindFS/vim-taskwarrior'
-Plugin 'Indent-Guides'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'fish.vim'
-Plugin 'Chiel92/vim-autoformat'
-""""Plugin 'zhaocai/GoldenView.vim'
-""""Plugin 'bbchung/clighter'
-Plugin 'airblade/vim-rooter'
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Shougo/vimshell.vim'
-Plugin 'rust-lang/rust.vim'
-""""Plugin 'racer-rust/vim-racer'
-
-""" Styles
-Plugin 'vivien/vim-addon-linux-coding-style'
-
-""" Themes
-Plugin 'jellybeans.vim'
-Plugin 'Zenburn'
-Plugin 'badwolf'
-Plugin 'itchyny/landscape.vim'
-Plugin 'fxn/vim-monochrome'
 
 colorscheme jellybeans
 
@@ -210,7 +206,13 @@ let g:DoxygenToolkit_authorName="Krzysztof Garczynski <garekkream@gmail.com>"
 " --- GoldenView
 let g:goldview__enable_at_startup = 0
 
+" --- Rooter
 let g:rooter_patterns = [".git/"]
+
+" --- Rust
+let g:rustfmt_autosave = 1
+let g:racer_cmd = "/usr/bin/racer"
+let $RUST_SRC_PATH = "/usr/src/rust/src"
 
 if has("cscope")
     set nocscopeverbose " suppres 'duplicate connections' error
