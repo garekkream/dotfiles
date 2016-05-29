@@ -1,29 +1,27 @@
 call plug#begin()
-Plug 'gmarik/vundle'
 Plug 'The-NERD-tree'
 Plug 'Rip-Rip/clang_complete'
 Plug 'Python-mode-klen'
 Plug 'Syntastic'
-Plug 'a.vim'
 Plug 'bling/vim-airline'
 Plug 'AutoClose'
 Plug 'bufexplorer.zip'
 Plug 'fugitive.vim'
 Plug 'DoxygenToolkit.vim'
-Plug 'xolox/vim-misc'
 Plug 'Mark'
 Plug 'Tagbar'
 Plug 'SuperTab'
-Plug 'blindFS/vim-taskwarrior'
+""Plug 'blindFS/vim-taskwarrior'
 Plug 'Indent-Guides'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'fish.vim'
-Plug 'Chiel92/vim-autoformat'
+""Plug 'Chiel92/vim-autoformat'
 ""Plug 'zhaocai/GoldenView.vim'
 ""Plug 'bbchung/clighter'
 Plug 'airblade/vim-rooter'
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
+Plug 'cespare/vim-toml'
 
 """ Styles
 Plug 'vivien/vim-addon-linux-coding-style'
@@ -66,7 +64,7 @@ set wrap
 set textwidth=80
 set linebreak
 set nolist
-set mat=2
+""set mat=2
 set ffs=unix,dos,mac
 
 set anti enc=utf-8
@@ -79,12 +77,11 @@ set nosmartcase
 set hlsearch            " highlight searches
 set incsearch           " do incremental searching
 set nocompatible
-set autoindent
 set number
 set showmatch
 set showcmd
 ""set autochdir
-"set cursorline
+""set cursorline
 set foldenable
 set ruler
 
@@ -195,10 +192,10 @@ let NERDTreeWinPos ='left'
 let NERDTreeWinSize =32
 
 " --- taskwarrior
-let g:task_report_name = 'next'
-let g:task_rc_override = 'defaultwidth=999'
-let g:task_info_vsplit = 0
-let g:task_info_size   = 15
+""let g:task_report_name = 'next'
+""let g:task_rc_override = 'defaultwidth=999'
+""let g:task_info_vsplit = 0
+""let g:task_info_size   = 15
 
 " --- DoxygenToolkit
 let g:DoxygenToolkit_authorName="Krzysztof Garczynski <garekkream@gmail.com>"
@@ -207,7 +204,8 @@ let g:DoxygenToolkit_authorName="Krzysztof Garczynski <garekkream@gmail.com>"
 let g:goldview__enable_at_startup = 0
 
 " --- Rooter
-let g:rooter_patterns = [".git/"]
+""let g:rooter_manual_only = 1
+""let g:rooter_disable_map = 1
 
 " --- Rust
 let g:rustfmt_autosave = 1
