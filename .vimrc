@@ -218,7 +218,7 @@ if has("cscope")
     """ Load preconfigured linux cscope
     exe "cs add /home/garekkream/Projects/linux/cscope.out /home/garekkream/Projects/linux/"
     """ Load preconfigured uboot cscope
-    exe "cs add /home/garekkream/Projects/u-boot/cscope.out /home/garekkream/Projects/u-boot/"
+""""    exe "cs add /home/garekkream/Projects/u-boot/cscope.out /home/garekkream/Projects/u-boot/"
 
 
     """ Load local cscope if exitsts
@@ -232,10 +232,10 @@ endif
 
 set tags+=./tags
 set tags+=/home/garekkream/Proejcts/linux/tags
-set tags+=/home/garekkream/Projects/u-boot/tags
+""""set tags+=/home/garekkream/Projects/u-boot/tags
 
 set path+=/home/garekkream/Projects/linux/include
-set path+=/home/garekkream/Projects/u-boot/include
+""""set path+=/home/garekkream/Projects/u-boot/include
 
 "map <silent> <F11> :call MyNTreeToggl()<CR>
 map <silent> <F11> :NERDTreeToggl<CR>
