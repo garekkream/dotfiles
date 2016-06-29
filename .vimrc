@@ -118,6 +118,7 @@ let g:clang_snippets=1
 let g:clang_conceal_snippets=1
 let g:clang_csnippets_engine='clang_complete'
 let g:clang_close_preview=1
+let g:clang_user_options = '-std=c++14'
 
 let g:mwDefaultHighlightingPalette = 'original'
 
@@ -139,6 +140,7 @@ let g:syntastic_c_compiler='clang'
 let g:syntastic_cpp_check_header=1
 let g:syntastic_cpp_checkers=['gcc']
 let g:syntastic_cpp_compiler="clang++"
+let g:syntastic_cpp_compiler_options = ' -std=c++14 -stdlib=libc++'
 let g:syntastic_cpp_auto_refresh_include=1
 
 if has('unix')
@@ -208,6 +210,7 @@ let g:goldview__enable_at_startup = 0
 ""let g:rooter_disable_map = 1
 
 " --- Rust
+set hidden
 let g:rustfmt_autosave = 1
 let g:racer_cmd = "/usr/bin/racer"
 let $RUST_SRC_PATH = "/usr/src/rust/src"
