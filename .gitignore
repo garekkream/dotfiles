@@ -18,3 +18,6 @@ cmake_install.cmake
 CMakeFiles
 .gdb_history
 
+# But not this one... 
+!.clang_complete
+

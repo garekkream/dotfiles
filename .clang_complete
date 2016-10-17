@@ -1,0 +1,10 @@
+-lpthread
+
+-I/home/garekkream/linux/include/
+-I/home/garekkream/u-boot/include/
+
+-Wc++14-extensions
+-std-c=c++14
+-Wall
+-Wextra
+-Wno-arc
