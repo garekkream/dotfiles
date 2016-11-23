@@ -20,4 +20,5 @@ CMakeFiles
 
 # But not this one... 
 !.clang_complete
+!.config
 
