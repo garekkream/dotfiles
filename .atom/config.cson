@@ -1,0 +1,103 @@
+"*":
+  Zen:
+    minimap: true
+  "autocomplete-clang":
+    "std c++": "c++14"
+  core:
+    disabledPackages: [
+      "autocomplete-atom-api"
+      "autocomplete-css"
+      "autocomplete-html"
+      "language-clojure"
+      "language-coffee-script"
+      "language-csharp"
+      "language-css"
+      "language-gfm"
+      "language-html"
+      "language-java"
+      "language-javascript"
+      "language-json"
+      "language-less"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-sass"
+      "language-sql"
+      "language-yaml"
+      "clang-format"
+    ]
+    openEmptyEditorOnStart: false
+    projectHome: "/home/garekkream/Projects/"
+    telemetryConsent: "no"
+    themes: [
+      "spacegray-dark-ui"
+      "spacegray-atom-dark-syntax"
+    ]
+  editor:
+    fontFamily: "Source Code Pro"
+    fontSize: 11
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+  "git-projects":
+    rootPath: "/home/garekkream/Projects"
+  "go-config":
+    gopath: "/home/garekkream/.go/"
+  linter:
+    errorPanelHeight: 24
+  "linter-rust":
+    cargoPath: "/usr/bin/cargo"
+    rustcPath: "/usr/bin/rustc"
+  "markdown-preview":
+    useGitHubStyle: true
+  minimap:
+    absoluteMode: true
+    adjustAbsoluteModeHeight: true
+  "nord-atom-ui":
+    darkerFormFocusEffect: true
+  "project-manager":
+    savePathsRelativeToHome: true
+  racer:
+    racerBinPath: "/usr/bin/racer"
+    rustSrcPath: "/usr/src/rust/src/"
+  "spell-check":
+    locales: [
+      "pl-PL"
+    ]
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  tabs:
+    enableVcsColoring: true
+  "todo-show":
+    openListInDirection: "ontop"
+    statusBarIndicator: true
+  tokamak:
+    cargoBinPath: "/usr/bin/cargo"
+    multirustBinPath: "/usr/bin/multirust"
+    racerBinPath: "/usr/bin/racer"
+    rustSrcPath: "/usr/src/rust/src/"
+    rustcBinPath: "/usr/bin/rustc"
+  "tokamak-terminal":
+    core: {}
+    style:
+      fontFamily: "Source Code Pro"
+      fontSize: "9"
+      theme: "dracula"
+    toggles:
+      autoClose: true
+  "tool-bar":
+    visible: false
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
+".c.source":
+  editor:
+    tabLength: 4
