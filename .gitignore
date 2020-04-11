@@ -11,6 +11,13 @@
 *.gz
 *.toc
 *.nav
+*.eep
+*.a
+*.elf
+*.hex
+*.lss
+*.lst
+*.map
 Module*
 modules*
 CMakeCache.txt

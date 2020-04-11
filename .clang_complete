@@ -1,6 +1,7 @@
 -lpthread
 
 -I/home/garekkream/Projects/linux/include/
+-I/home/garekkream/Projects/esp/esp-idf/components/
 -I/usr/avr/include/
 
 -Wc++14-extensions
